@@ -3,30 +3,33 @@ using namespace std;
 // Function prototypes
 void displayMenu();
 int main() {
-   char choice;
-   do {
-       displayMenu();
-       cout << "Enter your choice: ";
-       cin >> choice;
-       cin.ignore(); // Clear input buffer
-       switch (choice) {
-           case '1':
-               // new();
-               break;
-           case '2':
-               // delete();
-               break;
-           case '3':
-               //search();
-               break;
-           case '4':
-               //displayAll();
-               break;
-           default:
-               cout << "Invalid choice. Please try again." << endl;
-       }
-   } while (choice <= '6');
-   return 0;
+    char choice;
+    do {
+        displayMenu();
+        cout << "Enter your choice: ";
+        cin >> choice;
+        cin.ignore(); // Clear input buffer
+        switch (choice) {
+            case '1':
+                // new();
+                break;
+            case '2':
+                // delete();
+                break;
+            case '3':
+                // search();
+                break;
+            case '4':
+                // displayAll();
+                break;
+            case '5':
+                cout << "Exiting program. Goodbye!" << endl;
+                break;
+            default:
+                cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != '5'); // Changed condition to compare with '5'
+    return 0;
 }
 void displayMenu() {
     cout << "\nAvailable operations:\n";
