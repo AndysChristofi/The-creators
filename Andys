@@ -6,26 +6,26 @@ int main() {
    char choice;
    do {
        displayMenu();
-       cout << “Enter your choice: “;
+       cout << "Enter your choice: ";
        cin >> choice;
        cin.ignore(); // Clear input buffer
        switch (choice) {
-           case ‘1’:
+           case '1':
                // new();
                break;
-           case ‘2’:
+           case '2':
                // delete();
                break;
-           case ‘3’:
+           case '3':
                //search();
                break;
-           case ‘4’:
+           case '4':
                //displayAll();
                break;
            default:
-               cout << “Invalid choice. Please try again.” << endl;
+               cout << "Invalid choice. Please try again." << endl;
        }
-   } while (choice <=6);
+   } while (choice <= '6');
    return 0;
 }
 void displayMenu() {
